@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Mi jardín mágico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mi jardín mágico">
+<meta name="theme-color" content="#0b1026">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="bg"></canvas>
+  <div id="halo"></div>
+  <div id="play"><div id="stages"></div></div>
+  <canvas id="fx"></canvas>
+
+  <div id="prev" class="arrow" aria-label="anterior"><svg viewBox="0 0 40 40"><path d="M25 7 L12 20 L25 33" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div id="next" class="arrow" aria-label="siguiente"><svg viewBox="0 0 40 40"><path d="M15 7 L28 20 L15 33" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div id="menu"><div id="track"></div></div>
+
+
+
+  <div id="parent">
+    <div class="hold" id="muteBtn" aria-label="sonido (mantener presionado)"><span class="fill"></span>
+      <svg viewBox="0 0 40 40"><path d="M6 15 H13 L22 8 V32 L13 25 H6 Z" fill="#fff"/><path id="waves" d="M27 14 C31 18 31 22 27 26 M31 10 C38 16 38 24 31 30" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path id="mutex" d="M27 14 L37 26 M37 14 L27 26" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" style="display:none"/></svg>
+    </div>
+    <div class="hold" id="resetBtn" aria-label="volver a empezar (mantener presionado)"><span class="fill"></span>
+      <svg viewBox="0 0 40 40"><path d="M31 12 A12 12 0 1 0 32 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M33 5 V14 H24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+
+  <div id="dots"></div>
+  <div id="fade"></div>
+  <div id="loading"><div class="lf"></div><div class="lf l2"></div><div class="lf l3"></div></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
